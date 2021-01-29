@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./images/logo.svg" alt="main logo">
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li><a href="#">Catalog</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <a href="tel:7194319698">719-431-9698</a>
+        <a href="#" class="button">Contact Us</a>
+    </header>
+    <main>
+       <section>
+           <h1>Contact  Us</h1>
+           <form action="ert" method="POST">
+               <fieldset>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Ivan Ivanov">
+
+                    <label>Phone
+                        <input type="tel" placeholder="+7 (765) 456 65 65">
+                    </label>
+
+                    <label for="email">E-mail</label>
+                    <input id="email" type="text">
+               </fieldset>
+
+               <fieldset>
+                   <legend>Payment Methods</legend>
+                    <ul>
+                        <li>
+                            <label for="cash-check">Сash</label>
+                            <input id="cash-check" type="checkbox" name="cash">
+                        </li>
+                        <li>
+                            <label for="card-check">Сredit Сard</label>
+                            <input id="card-check" type="checkbox" name="card">
+                        </li>
+                        <li>
+                            <label for="receipt-check">Receipt
+                                <input id="receipt-check" type="checkbox" name="receipt">
+                            </label>
+                        </li>
+                    </ul>
+               </fieldset>
+
+               <label>City of Birth
+                   <input type="text">
+               </label>
+
+               <fieldset>
+                   <legend>Do you need a report on the services provided?</legend>
+                   <ul>
+                       <li>
+                            <label for="yes-radio">Yes</label>
+                            <input id="yes-radio" type="radio" name="report">
+                       </li>
+                       <li>
+                            <label for="no-radio">No</label>
+                            <input id="no-radio" type="radio" name="report">
+                    </li>
+                   </ul>
+               </fieldset>
+
+               <label for="textarea">Message</label>
+               <textarea name="ertret" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
+               
+               <button type="submit">Submit</button>
+           </form>
+       </section>
+        <article>
+            <div class="">
+                <h3>Chem-Dry</h3>
+                <p>9420 Cedar CT, Thornton, CO 80229</p>
+                <a href="tel:7206059399 ">(720) 605-9399 </a>
+                <a href="#" class="button">Learn More</a>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <h2>Subscribe to our social networks</h2>
+        <ul class="social">
+            <li><a href="#"><img src="./images/soc1.svg" alt=""></a></li>
+            <li><a href="#"><img src="./images/soc2.svg" alt=""></a></li>
+            <li><a href="#"><img src="./images/soc3.svg" alt=""></a></li>
+            <li><a href="#"><img src="./images/soc4.svg" alt=""></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
