@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2C3036;
+    margin: 0;
+}
+
+.button {
+    background: #008752;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: block;
+    max-width: 181px;
+    width: 100%;
+    padding: 11px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 100px;
+    margin: 0 auto;
+}
+
+.title {
+    color: #005DAB;
+}
+
+.footer {
+    background: #00559D;
+}
