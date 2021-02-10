@@ -181,11 +181,18 @@ body {
     width: 100%;
     background-color: #008752;
     color: #FFFFFF;
+    padding: 34px 44px;
 }
 .map-info-title {
     font-size: 30px;
     line-height: 36px;
     font-weight: 900;
+    margin: 0 0 17px;
+}
+.map-phone {
+    color: #fff;
+    margin-bottom: 23px;
+    display: block;
 }
 
 /* footer */
