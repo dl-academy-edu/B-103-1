@@ -10,7 +10,9 @@
 </head>
 <body>
     <header class="header container">
-        <img src="./images/logo.svg" alt="main logo">
+        <a href="index.html">
+            <img src="./images/logo.svg" alt="main logo">
+        </a>
         <nav class="header-nav">
             <ul class="header-nav-list nav">
                 <li><a href="#">Catalog</a></li>
@@ -25,8 +27,8 @@
     <main>
         <section class="banner">
             <div class="container">
-                <h1>The world’s leading cleaning company</h1>
-                <button type="button">Get a Free Estimate</button>
+                <h1 class="banner-title">The world’s leading cleaning company</h1>
+                <button type="button" class="button button-secondary">Get a Free Estimate</button>
             </div>
         </section>
         <section class="services container">
@@ -105,19 +107,21 @@
                     <h3 class="map-info-title">Chem-Dry</h3>
                     <p>9420 Cedar CT, Thornton, CO 80229</p>
                     <a href="tel:7206059399" class="map-phone">(720) 605-9399 </a>
-                    <a href="#" class="button">Learn More</a>
+                    <a href="#" class="button button-secondary">Learn More</a>
                 </div>
             </div>
+            <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.535577982523!2d49.288136315981426!3d53.51249116995419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41687981eb77e79b%3A0xc6236db15e1d074e!2z0L_RgC4g0KHRgtC10L_QsNC90LAg0KDQsNC30LjQvdCwLCA0NCwg0KLQvtC70YzRj9GC0YLQuCwg0KHQsNC80LDRgNGB0LrQsNGPINC-0LHQuy4sIDQ0NTAyNw!5e0!3m2!1sru!2sru!4v1612971794002!5m2!1sru!2sru" tabindex="0"></iframe>
         </article>
     </main>
     <footer class="footer">
         <div class="container footer-content">
             <h2 class="footer-title">Subscribe to our social networks</h2>
             <ul class="social nav">
-                <li><a href="#"><img src="./images/soc1.svg" alt=""></a></li>
-                <li><a href="#"><img src="./images/soc2.svg" alt=""></a></li>
-                <li><a href="#"><img src="./images/soc3.svg" alt=""></a></li>
-                <li><a href="#"><img src="./images/soc4.svg" alt=""></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank" class="soc-ico ico-fb"></a></li>
+                <li><a href="#" class="soc-ico ico-tw"></a></li>
+                <li><a href="#" class="soc-ico ico-gg"></a></li>
+                <li><a href="#" class="soc-ico ico-in"></a></li>
+                <li><a href="#" class="soc-ico ico-ut"></a></li>
             </ul>
         </div>
     </footer>
