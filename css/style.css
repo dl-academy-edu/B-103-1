@@ -18,12 +18,15 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     line-height: 18px;
+    font-weight: 400;
     color: #2C3036;
     margin: 0;
 }
 
 .nav {
     list-style: none;
+    margin: 0;
+    overflow: 0;
 }
 
 .hidden {
@@ -58,12 +61,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 0;
 }
-.header-left,
+/* .header-left,
 .header-right {
     display: flex;
     align-items: center;
-}
+} */
+
+/* .header-nav {
+    margin: 0 auto 0 25px;
+} */
 
 .header-nav-list {
     display: flex;
@@ -77,6 +85,7 @@ body {
 }
 .header-phone {
     color: #95459A;
+    /* margin-right: 25px; */
 }
 
 .title {
@@ -84,7 +93,15 @@ body {
 }
 
 
+/* banner */
+
+.banner {
+    background-image: url('../images/soc1.svg'); 
+}
+
+
 /* service */
+
 .services {
     margin-bottom: 110px;
 }
@@ -97,8 +114,6 @@ body {
 }
 .services-list {
     display: flex;
-    padding: 0;
-    margin: 0;
 }
 .service-card {
     max-width: 33%;
@@ -117,11 +132,13 @@ body {
     line-height: 36px;
     margin: 0;
     margin-bottom: 20px;
+    color: #2C3036;
 
 }
 .service-card-description {
     font-size: 16px;
     line-height: 21px;
+    font-weight: 400;
 }
 
 /* about */
@@ -144,11 +161,16 @@ body {
     line-height: 28px;
 }
 
+.about-right img{
+    box-shadow: 80px 80px 0 #008752;
+}
+
+
+/* partners */
+
 .partners-list {
     display: flex;
     justify-content: space-between;
-    padding: 0;
-    margin: 0;
 }
 
 
@@ -190,16 +212,13 @@ body {
     margin-left: 16px;
 }
 
-.about-right {
-    position: relative;
-}
-.about-right:after {
-    content: '';
+/* .social a {
+    background-image: url('../images/soc1.svg'); 
+    background-color: #DAE2E5;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: auto;
     display: block;
-    position: absolute;
-    background: #008752;
-    width: 570px;
-    height: 500px;
-    bottom: -50px;
-    right: -50px;
-}
+    width: 60px;
+    height: 60px;
+} */

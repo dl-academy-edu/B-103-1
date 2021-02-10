@@ -4,81 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contacts.css">
 	<title>Main page</title>
 </head>
 <body>
-    <header class="header">
-        <img src="./images/logo.svg" alt="main logo">
+    <header class="header container">
+        <a href="index.html">
+            <img src="./images/logo.svg" alt="main logo">
+        </a>
         <nav class="header-nav">
-            <ul class="header-nav-list">
+            <ul class="header-nav-list nav">
                 <li><a href="#">Catalog</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About us</a></li>
             </ul>
         </nav>
-        <a href="tel:7194319698">719-431-9698</a>
-        <a href="#" class="button">Contact Us</a>
+        <a href="tel:7194319698" class="header-phone">719-431-9698</a>
+        <a href="contacts.html" class="button">Contact Us</a>
     </header>
-    <main>
+    <main class="container">
        <section>
-           <h1>Contact  Us</h1>
-           <form action="ert" method="POST">
-               <fieldset>
-                    <label for="name">Name</label>
-                    <input id="name" type="text" placeholder="Ivan Ivanov">
+           <h1 class="page-title">Contact  Us</h1>
+           <form accept="" method="post" class="contact-form">
+            <div class="form-name-phone">
+                <div class="label-wrapper">
+                    <input id="name-input" type="text" placeholder="Ivan Ivanov">
+                    <label for="name-input">Name</label>
+                </div>
+                <div class="label-wrapper">
+                    <input id="phone-input" type="text" placeholder="">
+                    <label for="phone-input">Phone</label>
+                </div>
+            </div>
 
-                    <label>Phone
-                        <input type="tel" placeholder="+7 (765) 456 65 65">
-                    </label>
+            <div class="label-wrapper email-wrapper">
+                <input id="email-input" type="email" placeholder="">
+                <label for="email-input">E-mail</label>
+            </div>
 
-                    <label for="email">E-mail</label>
-                    <input id="email" type="text">
-               </fieldset>
-
-               <fieldset>
-                   <legend>Payment Methods</legend>
-                    <ul>
-                        <li>
-                            <label for="cash-check">Сash</label>
-                            <input id="cash-check" type="checkbox" name="cash">
-                        </li>
-                        <li>
-							<label for="card-check" style="font-size:45px;">Сredit Сard</label>
-                            <input id="card-check" type="checkbox" name="card">
-                        </li>
-                        <li>
-                            <label for="receipt-check">Receipt
-                                <input id="receipt-check" type="checkbox" name="receipt">
-                            </label>
-                        </li>
-                    </ul>
-               </fieldset>
-
-               <label>City of Birth
-                   <input type="text">
-               </label>
-
-               <fieldset>
-                   <legend>Do you need a report on the services provided?</legend>
-                   <ul>
-                       <li>
-                            <label for="yes-radio">Yes</label>
-                            <input id="yes-radio" type="radio" name="report">
-                       </li>
-                       <li>
-                            <label for="no-radio">No</label>
-                            <input id="no-radio" type="radio" name="report">
+            <fieldset class="form-fieldset-wrapper">
+                <legend>Payment Methods</legend>
+                <ul class="payment-list">
+                    <li>
+                        <input id="check-cash" type="checkbox" class="hidden input">
+                        <label for="check-cash" class="checkbox">Cash</label>
                     </li>
-                   </ul>
-               </fieldset>
+                    <li>
+                        <input id="check-credit" type="checkbox" class="hidden input">
+                        <label for="check-credit" class="checkbox">Сredit Сard</label>
+                    </li>
+                    <li>
+                        <input id="check-receipt" type="checkbox" class="hidden input">
+                        <label for="check-receipt" class="checkbox">Receipt</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="label-wrapper email-wrapper">
+                <input id="email-input" type="text" placeholder="">
+                <label for="email-input">City of Birth</label>
+            </div>
+            <fieldset class="form-fieldset-wrapper">
+                <legend>Do you need a report on the services provided?</legend>
+                <ul class="radio-list">
+                    <li>
+                        <input id="radio-yes" type="radio" name="report" value="yes" class="hidden radio"
+                            checked>
+                        <label for="radio-yes" class="radio-button">Yes</label>
+                    </li>
+                    <li>
+                        <input id="radio-no" type="radio" name="report" value="no" class="hidden radio">
+                        <label for="radio-no" class="radio-button">No</label>
+                    </li>
+                </ul>
+            </fieldset>
 
-               <label for="textarea">Message</label>
-               <textarea name="ertret" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
-               
-               <button type="submit">Submit</button>
-           </form>
+            <div class="textarea-wrapper">
+                <label for="textarea">Message</label>
+                <textarea id="textarea" rows="5"></textarea>
+            </div>
+            <div class="form-button-wrapper">
+                <button type="submit" class="button">Submit</button>
+            </div>
+        </form>
        </section>
         <article>
             <div class="">
@@ -90,13 +100,15 @@
         </article>
     </main>
     <footer class="footer">
-        <h2>Subscribe to our social networks</h2>
-        <ul class="social">
-            <li><a href="#"><img src="./images/soc1.svg" alt=""></a></li>
-            <li><a href="#"><img src="./images/soc2.svg" alt=""></a></li>
-            <li><a href="#"><img src="./images/soc3.svg" alt=""></a></li>
-            <li><a href="#"><img src="./images/soc4.svg" alt=""></a></li>
-        </ul>
+        <div class="container footer-content">
+            <h2 class="footer-title">Subscribe to our social networks</h2>
+            <ul class="social nav">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
