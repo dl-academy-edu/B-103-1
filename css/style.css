@@ -118,6 +118,7 @@ body {
     background-position: center;
     background-color: linear-gradient(180deg, #E0E7ED 16.53%, #DAE2E5 102.51%);
     height: 720px;
+    margin-bottom: 80px;
 }
 .banner-title {
     font-size: 90px;
@@ -180,6 +181,9 @@ body {
 .about-right {
     max-width: 50%;
 }
+.about-left {
+    padding-right: 100px;
+}
 .about-title {
     font-size: 72px;
     line-height: 1.2;
@@ -196,10 +200,22 @@ body {
 
 
 /* partners */
+.partners {
+    margin-bottom: 80px;
+}
 
 .partners-list {
     display: flex;
     justify-content: space-between;
+}
+.partners-list a {
+    opacity: 0.6; 
+}
+.partners-list a:hover {
+    opacity: 1;
+}
+.partners-list a:active {
+    opacity: 0.3;
 }
 
 
@@ -217,6 +233,8 @@ body {
     padding: 34px 44px;
     position: relative;
     z-index: 1;
+    top: 50%;
+    transform: translate(0, 50%);
 }
 .map-info-title {
     font-size: 30px;
@@ -270,11 +288,14 @@ body {
     background: url('../images/soc1.svg') no-repeat;
 }
 .ico-tw {
-    background: url('../images/soc1.svg') no-repeat;
+    background: url('../images/soc2.svg') no-repeat;
 }
-.ico-fb {
-    background: url('../images/soc1.svg') no-repeat;
+.ico-gg {
+    background: url('../images/soc3.svg') no-repeat;
 }
-.ico-fb {
-    background: url('../images/soc1.svg') no-repeat;
+.ico-in {
+    background: url('../images/soc4.svg') no-repeat;
+}
+.ico-ut {
+    background: url('../images/soc5.svg') no-repeat;
 }
