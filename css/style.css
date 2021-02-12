@@ -284,18 +284,18 @@ body {
     width: 60px;
     height: 60px;
 }
-.ico-fb {
-    background: url('../images/soc1.svg') no-repeat;
+.ico-svg:hover path {
+    fill: #60A7E3;
 }
-.ico-tw {
-    background: url('../images/soc2.svg') no-repeat;
+.ico-svg:active path {
+    fill: #17354F;
 }
-.ico-gg {
-    background: url('../images/soc3.svg') no-repeat;
+
+.popup .contact-form {
+    position: relative;
 }
-.ico-in {
-    background: url('../images/soc4.svg') no-repeat;
-}
-.ico-ut {
-    background: url('../images/soc5.svg') no-repeat;
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
