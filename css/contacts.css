@@ -26,7 +26,7 @@
 
 .label-wrapper {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .label-wrapper label {
@@ -47,6 +47,10 @@
 }
 .label-wrapper input:focus+label {
     color: #FFB612;
+}
+
+.label-wrapper:focus-within label {
+  color: #FFB612;
 }
 
 .email-wrapper {

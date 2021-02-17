@@ -29,7 +29,7 @@
         <section class="banner">
             <div class="container">
                 <h1 class="banner-title">The world’s leading cleaning company</h1>
-                <button type="button" class="button button-secondary">Get a Free Estimate</button>
+                <button type="button" class="button button-secondary button-js">Get a Free Estimate</button>
             </div>
         </section>
         <section class="services container">
@@ -150,37 +150,41 @@
         </div>
     </footer>
 
-    <div class="popup">
-        <form accept="" method="post" class="contact-form">
-            <button class="close">
-                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.07109 14.6113C1.58694 15.1295 0.83381 15.1295 0.349661 14.6113C0.107586 14.3522 3.88142e-07 14.0355 4.02063e-07 13.69C4.15984e-07 13.3445 0.107586 13.0278 0.349661 12.7687L5.27185 7.5L0.349662 2.23127C0.107587 1.97215 8.86971e-07 1.65547 9.00891e-07 1.30998C9.14812e-07 0.964491 0.107587 0.647806 0.349662 0.388689C0.833811 -0.129545 1.58694 -0.129545 2.07109 0.388689L6.99328 5.65738L11.9155 0.38869C12.3996 -0.129545 13.1527 -0.129545 13.6369 0.38869C14.121 0.906924 14.121 1.71304 13.6369 2.23127L8.7147 7.5L13.6369 12.7687C14.121 13.287 14.121 14.0931 13.6369 14.6113C13.1527 15.1295 12.3996 15.1295 11.9155 14.6113L6.99328 9.34258L2.07109 14.6113Z" fill="#121212"/>
-                    </svg>
-                    
-            </button>
-            <div class="form-name-phone">
-                <div class="label-wrapper">
-                    <input id="name-input" type="text" placeholder="Ivan Ivanov">
-                    <label for="name-input">Name</label>
+    <section class="popup overlay-js">
+        <div class="popup-form">
+            <form accept="" method="post" class="contact-form">
+                <button type="button" class="close close-js">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.07109 14.6113C1.58694 15.1295 0.83381 15.1295 0.349661 14.6113C0.107586 14.3522 3.88142e-07 14.0355 4.02063e-07 13.69C4.15984e-07 13.3445 0.107586 13.0278 0.349661 12.7687L5.27185 7.5L0.349662 2.23127C0.107587 1.97215 8.86971e-07 1.65547 9.00891e-07 1.30998C9.14812e-07 0.964491 0.107587 0.647806 0.349662 0.388689C0.833811 -0.129545 1.58694 -0.129545 2.07109 0.388689L6.99328 5.65738L11.9155 0.38869C12.3996 -0.129545 13.1527 -0.129545 13.6369 0.38869C14.121 0.906924 14.121 1.71304 13.6369 2.23127L8.7147 7.5L13.6369 12.7687C14.121 13.287 14.121 14.0931 13.6369 14.6113C13.1527 15.1295 12.3996 15.1295 11.9155 14.6113L6.99328 9.34258L2.07109 14.6113Z" fill="#121212"/>
+                        </svg>
+                        
+                </button>
+                <div class="form-name-phone">
+                    <div class="label-wrapper">
+                        <input id="name-input" type="text" placeholder="Ivan Ivanov">
+                        <label for="name-input">Name</label>
+                    </div>
+                    <div class="label-wrapper">
+                        <input id="phone-input" type="text" placeholder="">
+                        <label for="phone-input">Phone</label>
+                    </div>
                 </div>
-                <div class="label-wrapper">
-                    <input id="phone-input" type="text" placeholder="">
-                    <label for="phone-input">Phone</label>
+                <div class="label-wrapper email-wrapper">
+                    <input id="email-input" type="email" placeholder="">
+                    <label for="email-input">E-mail</label>
                 </div>
-            </div>
-            <div class="label-wrapper email-wrapper">
-                <input id="email-input" type="email" placeholder="">
-                <label for="email-input">E-mail</label>
-            </div>
-            <div class="textarea-wrapper">
-                <label for="textarea">Message</label>
-                <textarea id="textarea" rows="5"></textarea>
-            </div>
-            <div class="form-button-wrapper">
-                <button type="submit" class="button">Submit</button>
-            </div>
-        </form>
-    </div>
+                <div class="textarea-wrapper">
+                    <label for="textarea">Message</label>
+                    <textarea id="textarea" rows="5"></textarea>
+                </div>
+                <div class="form-button-wrapper">
+                    <button type="submit" class="button">Submit</button>
+                </div>
+            </form>
+        </div>
+        
+    </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
